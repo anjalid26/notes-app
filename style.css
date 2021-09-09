@@ -5,6 +5,67 @@
 }
 
 body {
+    background-color: rgb(154, 209, 241);
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Andada Pro', serif;
     margin: 0;
+    padding-top: 3rem;
+}
+
+.add {
+    background-color: #9ec862;
+    color: white;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: none;
+    position: fixed;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.note {
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 250px;
+    height: 300px;
+}
+
+.note .tools {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #b8bdc5;
+    padding: 0.5rem;
+}
+
+.note .tools button {
+    background-color: transparent;
+    border: none;
+    color: rgb(105, 100, 100);
+    font-size: 100%;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.note .main {
+    /* display: none; */
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.note textarea {
+    background-color: whitesmoke;
+    overflow: hidden;
+    font-family: inherit;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.note .hidden {
+    display: none;
 }
